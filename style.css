@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    background-color: #7BAED3;
+}
+
+.form{
+    position: absolute;
+    top:30%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.54) ;
+    width:400px;
+    background-color: #9CCBA0;
+}
+
+.input{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.list {
+    padding:0;
+    margin:0;
+}
+
+.list li{
+    list-style: none;
+    padding:10px;
+    font-family: cursive;
+    border-top: 1px #8686D2 dotted;
+    position: relative;
+}
+
+.list li .fa-square-check{
+    position: absolute;
+    right:30px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:darkgreen;
+}
+
+.list li .fa-trash{
+    position: absolute;
+    right:10px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+   color: #D47291;
+}
+
+.list li.checked{
+    color:darkgray;
+    text-decoration: line-through;
+    text-decoration-color: #073508;
+}
+
+.list li.checked .fa-square-check{
+    color:darkgray;
+}
